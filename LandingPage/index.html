@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#f6f4ec">
+		<meta name="description" content="Maquillaje para perros y otras soluciones para problemas que nadie tenía.">
+		<title>Por Si Acaso — maquillaje canino y otras necesidades</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+	<script src="javascript.js" defer></script>
+</head>
+<body>
+	<div class="announcement" aria-label="Anuncio">
+		<span>ENVÍO GRATIS A TU CASA. LA CRISIS EXISTENCIAL VA APARTE.</span>
+		<span class="announcement__aside">SIN DEVOLUCIONES DEL SENTIDO COMÚN</span>
+	</div>
+
+	<header class="site-header">
+		<a class="wordmark" href="#inicio" aria-label="Por Si Acaso, inicio">por si acaso<span>®</span></a>
+		<nav class="site-nav" aria-label="Navegación principal">
+			<a href="#catalogo">La tienda</a>
+			<a href="#manifiesto">Nuestra filosofía</a>
+		</nav>
+		<button class="bag-button" id="open-cart" type="button" aria-haspopup="dialog" aria-label="Abrir bolsa, 0 artículos">
+			Mi bolsa <span class="bag-count" id="cart-count" aria-hidden="true">0</span>
+		</button>
+	</header>
+
+	<main>
+		<section class="hero" id="inicio" aria-labelledby="hero-title">
+			<div class="hero__copy">
+				<p class="eyebrow"><span class="eyebrow__dot"></span> DEPARTAMENTO DE NECESIDADES INVENTADAS</p>
+				<h1 id="hero-title">Glamour<br>para tu<br><span>perro.</span></h1>
+				<div class="hero__bottom">
+					<p>Maquillaje canino de alta costura. Porque su cara de «yo no fui» merece un delineado profesional.</p>
+					<a class="button button--dark" href="#catalogo">Conocer la colección <span aria-hidden="true">↘</span></a>
+				</div>
+			</div>
+
+			<div class="hero__visual" aria-label="Producto destacado de la tienda">
+				<div class="hero__sunburst" aria-hidden="true">GLAMOUR<br>CANINO</div>
+				<div class="hero__photo" id="hero-photo">
+					<div class="image-placeholder" aria-hidden="true">P.S.A.</div>
+				</div>
+				<div class="hero__label"><span>ESTÉTICA CANINA<br>DE ALTA COSTURA</span><span class="hero__arrow" aria-hidden="true">↗</span></div>
+				<p class="hero__caption" id="hero-caption">Maquillaje para perros: porque ese «mírame, humano» merece un delineado impecable.</p>
+				<span class="hero__scribble" aria-hidden="true">cero<br>urgencia</span>
+			</div>
+			<div class="hero__index" aria-hidden="true">N.º 001 — CATALOGO DE CAPRICHOS</div>
+		</section>
+
+		<div class="ticker" aria-label="Promesas de nuestra tienda">
+			<div class="ticker__track" aria-hidden="true">
+				<span>COMPRAR COSAS NO RESUELVE TODO</span><span class="ticker__star">✳</span>
+				<span>PERO TU PERRO MERECE GLAMOUR</span><span class="ticker__star">✳</span>
+				<span>COMPRAR COSAS NO RESUELVE TODO</span><span class="ticker__star">✳</span>
+				<span>PERO TU PERRO MERECE GLAMOUR</span><span class="ticker__star">✳</span>
+			</div>
+		</div>
+
+		<section class="catalog section-wrap" id="catalogo" aria-labelledby="catalog-title">
+			<div class="section-heading">
+				<div>
+					<p class="eyebrow"><span class="eyebrow__dot"></span> EXISTENCIAS DE DUDOSA PRIORIDAD</p>
+					<h2 id="catalog-title">El catálogo<br>del «por si acaso»<span class="heading-period">.</span></h2>
+				</div>
+				<p class="section-heading__note">Fotos originales. Precios de FakeStoreAPI.<br>Necesidades aprobadas por nadie.</p>
+			</div>
+			<div class="product-grid" id="product-grid" aria-live="polite" aria-busy="true">
+				<div class="loading-message"><span class="loader" aria-hidden="true"></span> Convenciendo a los productos para que aparezcan...</div>
+			</div>
+			<p class="catalog__footnote">Imágenes locales de la colección. Precios obtenidos de FakeStoreAPI. La necesidad, completamente ficticia.</p>
+		</section>
+
+		<section class="manifesto" id="manifiesto" aria-labelledby="manifesto-title">
+			<div class="manifesto__mark" aria-hidden="true">P<br>S<br>A</div>
+			<div class="manifesto__content">
+				<p class="eyebrow"><span class="eyebrow__dot"></span> NUESTRO MANIFIESTO</p>
+				<h2 id="manifesto-title">La vida ya es complicada.<br>Tu ropa no tiene por qué.</h2>
+				<p>En Por Si Acaso creemos que cada problema inventado merece una solución real. O, como mínimo, un retoque estético para tu perro. Tú pones la excusa; nosotros ponemos el producto.</p>
+				<a href="#catalogo" class="text-link">Seguir buscando excusas <span aria-hidden="true">↗</span></a>
+			</div>
+			<p class="manifesto__note">NINGÚN PROBLEMA<br>FUE RESUELTO<br>DURANTE LA CREACIÓN<br>DE ESTA TIENDA.</p>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<a class="wordmark wordmark--footer" href="#inicio">por si acaso<span>®</span></a>
+		<p>Compra con cabeza. O sin ella, tú sabrás.</p>
+		<a href="#inicio" class="back-to-top">Volver arriba ↑</a>
+	</footer>
+
+	<dialog class="cart-dialog" id="cart-dialog" aria-labelledby="cart-title">
+		<div class="cart-dialog__header">
+			<div><p class="eyebrow">TU INVENTARIO DE EXCUSAS</p><h2 id="cart-title">La bolsa<span class="heading-period">.</span></h2></div>
+			<button class="close-button" id="close-cart" type="button" aria-label="Cerrar bolsa">×</button>
+		</div>
+		<div class="cart-items" id="cart-items"></div>
+		<div class="cart-dialog__footer">
+			<div class="cart-total"><span>Total de malas decisiones</span><strong id="cart-total">0,00 €</strong></div>
+			<button class="button button--dark cart-checkout" id="checkout-button" type="button" disabled>Formalizar el capricho ↗</button>
+			<p class="cart-disclaimer">La compra es ficticia. Tu criterio, esperamos que no.</p>
+		</div>
+	</dialog>
+
+	<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
